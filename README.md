@@ -15,7 +15,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-Technical Acceptance Criteria: 40%
+##Technical Acceptance Criteria: 40%
 Satisfies all of the above acceptance criteria plus the following:
 
 The Challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
@@ -28,7 +28,7 @@ Application GitHub URL submitted.
 
 GitHub repository that contains application code.
 
-Application Quality: 15%
+##Application Quality: 15%
 Application user experience is intuitive and easy to navigate.
 
 Application user interface style is clean and polished.
@@ -51,7 +51,7 @@ Repository contains a quality README file with description, screenshot, and link
 How to Submit the Challenge
 You are required to submit BOTH of the following for review:
 
-The URL of the deployed application.
+##The URL of the deployed application.
 
 
 The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.

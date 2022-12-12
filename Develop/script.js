@@ -21,21 +21,21 @@ function generatePassword() {
   var lowercase = window.confirm("Do you want to use lowercase?")
   console.log(lowercase)
   if (lowercase == true) {
-    console.log("lowercase")
+    chosenChar = chosenChar.concat(lowerCaseChar)
   }
 
 
   var uppercase = window.confirm("Do you want to use uppercase?")
   console.log(uppercase)
   if (uppercase == true) {
-    console.log("uppercase")
+    chosenChar = chosenChar.concat(upperCaseChar)
   }
 
 
   var numbers = window.confirm("Do you want to use numbers?")
   console.log(numbers)
   if (numbers == true) {
-    console.log("numbers")
+    chosenChar = chosenChar.concat(numberChar)
   }
 
 
@@ -43,18 +43,19 @@ function generatePassword() {
   var specialchar = window.confirm("Do you want to use special characters?")
   console.log(specialchar)
   if (specialchar == true) {
-    console.log("specialchar")
+    chosenChar = chosenChar.concat(specialChar)
   }
 
-
-
-  // 2. generate psswrd
-
-
-
-  // 3. display psswrd
-  return "Password will go here.";
+  console.log(chosenChar)
+  var password = ""
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * chosenChar.length)
+    var randomChar = chosenChar[randomIndex]
+    password = password + randomChar
+  }
+  return password
 }
+
 
 
 // Get references to the #generate element
